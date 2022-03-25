@@ -1,131 +1,150 @@
-@font-face {
-    font-family: "tffh";
-    src: url("../font/Typo-FarFromHomecoming.otf");
-}
-
-:root {
-    --color-red: #b11313;
-    --color-yellow: #f1c530;
-    --color-blue: #114c92;
-}
-
-
-/*Font*/
-
-.f-title-1 {
-    font-family: "tffh";
-}
-
-
-/* background-color */
-
-.bg-red {
-    background-color: var(--color-red);
-}
-
-.bg-yellow {
-    background-color: var(--color-yellow);
-}
-
-.bg-blue {
-    background-color: var(--color-blue);
-}
-
-
-/* text-color */
-
-.text-red {
-    color: var(--color-red);
-}
-
-.text-yellow {
-    color: var(--color-yellow);
-}
-
-.text-blue {
-    color: var(--color-blue);
-}
-
-
-/* Icon size */
-
-.is-1 {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-
-/* input form-control*/
-
-.form-control {
-    padding: 0.5 1rem;
-    min-width: 150px;
-    border-radius: 1rem;
-}
-
-
-/* form select du footer*/
-
-.form-select {
-    border: none;
-    padding: 0 1rem;
-    min-width: 100px;
-    border-radius: 1rem;
-    background-image: url("select-arrow.svg")!important;
-}
-
-
-/* header*/
-
-header {
-    top: 0;
-    width: 100%;
-    position: fixed;
-}
-
-
-/******* HOME *******/
-
-#spiderman-top {
-    width: 100%;
-    height: 40vw;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url(../img/Illustration/img1.png);
-}
-
-#become-spider {
-    background-position: 0rem;
-    background-repeat: no-repeat;
-    background-image: url(../img/Illustration/img5.png);
-}
-
-#newsletter {
-    height: 40vw;
-    background-position: 150%;
-    background-size: 80% 100%;
-    background-repeat: no-repeat;
-    background-image: url(../img/Illustration/img6.png);
-}
-
-
-/**** ABOUT ***/
-
-#laToile {
-    width: 100%;
-    height: 40vw;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: 70% 100%;
-    background-image: url(../img/Illustration/img5alt.png);
-}
-
-@media screen and (max-width:768px) {
-    header {
-        background-color: rgba(0, 0, 0, 0)!important;
-    }
-    #become-spider {
-        background-size: 100% 100%;
-        background-image: url(../img/Illustration/img5.png);
-    }
-}
+        @font-face {
+            font-family: "tffh";
+            src: url("../font/Typo-FarFromHomecoming.otf");
+        }
+        
+         :root {
+            --color-red: #b11313;
+            --color-yellow: #f1c530;
+            --color-blue: #114c92;
+        }
+        
+        body {
+            color: white;
+        }
+        /*Font*/
+        
+        .f-title-1 {
+            font-family: "tffh";
+        }
+        /* background-color */
+        
+        .bg-red {
+            background-color: var(--color-red);
+        }
+        
+        .bg-yellow {
+            background-color: var(--color-yellow);
+        }
+        
+        .bg-blue {
+            background-color: var(--color-blue);
+        }
+        /* text-color */
+        
+        .text-red {
+            color: var(--color-red);
+        }
+        
+        .text-yellow {
+            color: var(--color-yellow);
+        }
+        
+        .text-blue {
+            color: var(--color-blue);
+        }
+        /* Icon size */
+        
+        .is-1 {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        /* input form-control*/
+        
+        .form-control {
+            padding: 0.5 1rem;
+            min-width: 150px;
+            border-radius: 1rem;
+        }
+        /* form select du footer*/
+        
+        .form-select {
+            border: none;
+            padding: 0 1rem;
+            min-width: 100px;
+            border-radius: 1rem;
+            background-image: url("select-arrow.svg")!important;
+        }
+        /* header*/
+        
+        header {
+            top: 0;
+            width: 100%;
+            position: fixed;
+        }
+        /******* HOME *******/
+        
+        #spiderman-top {
+            width: 100%;
+            height: 40vw;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url(../img/Illustration/img1.png);
+        }
+        
+        #become-spider {
+            background-position: 0rem;
+            background-repeat: no-repeat;
+            background-image: url(../img/Illustration/img5.png);
+        }
+        
+        #newsletter {
+            height: 40vw;
+            background-position: 150%;
+            background-size: 80% 100%;
+            background-repeat: no-repeat;
+            background-image: url(../img/Illustration/img6.png);
+        }
+        /**** ABOUT ***/
+        
+        #laToile {
+            width: 100%;
+            height: 40vw;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: 70% 100%;
+            background-image: url(../img/Illustration/img5alt.png);
+        }
+        /*** HEROS **/
+        
+        #unHero {
+            width: 100%;
+            height: 40vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../img/Illustration/img19.png);
+        }
+        
+        #fondation {
+            width: 100%;
+            height: 30vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../img/Illustration/img20.png);
+        }
+        
+        #univers {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("../img/Illustration/img33.png");
+        }
+        
+        .bg-transparent-blue {
+            background-color: rgba(17, 75, 146, 0.686);
+        }
+        
+        #avengers {
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-image: url(../img/Illustration/img32.png);
+        }
+        
+        @media screen and (max-width: 768px) {
+            header {
+                background-color: rgba(0, 0, 0, 0)!important;
+            }
+            #become-spider {
+                background-size: 100% 100%;
+                background-image: url(../img/Illustration/img5.png);
+            }
+        }

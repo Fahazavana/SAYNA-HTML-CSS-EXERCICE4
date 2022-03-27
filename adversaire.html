@@ -13,32 +13,39 @@
     <title>Adversaire</title>
 </head>
 
-<body class="bg-yellow mt-0 pt-md-5">
-
+<body class="bg-yellow">
     <!-- Header and Navigation bar -->
-    <header class="bg-yellow">
-        <nav class="container d-flex justify-content-between">
-            <a href="home.html" class="d-inline-flex align-items-center justify-content-evenly">
-                <img class="h-75" src="./assets/img/Logo/logo1.png" alt="">
-                <img class="h-25" src="./assets/img/Logo/logo2.png" alt="">
-                <img class="h-75" src="./assets/img/Logo/logo3.png" alt="">
-            </a>
-            <ul class="list-unstyled d-none d-md-flex align-items-center m-0">
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="home.html">Acceuil</a></li>
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="adversaire.html">Adversaire</a></li>
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="hero.html">Héros</a></li>
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="about.html">À propos</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="home.html" class="navbar-brand d-inline-flex align-items-center justify-content-evenly">
+                    <img class="h-75" src="./assets/img/Logo/logo1.png" alt="">
+                    <img class="h-25" src="./assets/img/Logo/logo2.png" alt="">
+                    <img class="h-75" src="./assets/img/Logo/logo3.png" alt="">
+                </a>
+                <!-- Togle button for mobile-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="dots"></span>
+          </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-center bg-red" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="home.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="adversaire.html">Adversaire</a></li>
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="hero.html">Héros</a></li>
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="about.html">À propos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
     <!-- MAIN SECTION -->
-    <section id="vilin">
+    <section id="vilin" class="d-flex align-items-center">
         <div class="container text-white">
             <h1 class="f-title-1">
-                SUPER VILIN
+                SUPER VILINS
             </h1>
-            <blockquote>
+            <blockquote class="fs-2 mt-2 fw-bold mt-4">
                 Ce n'est jamais blanc ou noir, méchant ou gentil!
             </blockquote>
         </div>
@@ -46,144 +53,234 @@
     </section>
     <section class="container">
 
-        <div class="row gap-5 justify-content-evenly pt-5">
-            <div class="col-md-3 carte">
+        <!-- First row -->
+        <div class="row">
+            <!-- Dennis -->
+            <div class="col-md-4 carte">
                 <div>
-                    <img class="img-fluid w-100" src="./assets/img/Illustration/img8.png" alt="" srcset=""></div>
+                    <img class="img-fluid w-100" src="./assets/img/Illustration/img8.png" alt="">
+
+                </div>
                 <div class="content">
-                    <h2>TITLE</h2>
+                    <h2 class="text-center">Denis Carredine</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
+                        <dl>
+                            <dt>Identité : </dt>
+                            <dd>Inspiré du Cambrioleur</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Humains sans caractéristique particulière.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Mi-temps entre escroc et voleur de voiture à New-York, il est partie responsable, avec Flint Marco, de la mort de Ben Parker lors du'un braquage à main armé qui a mal tourné. C'est le premier aversaire de Peter Parker qui l'amène
+                                à devenir Spiderman.
+                            </dd>
+                        </dl>
                     </p>
                 </div>
             </div>
-
-
-            <div class="col-md-3 carte">
+            <!-- Bouffon-->
+            <div class="col-md-4 carte">
                 <div>
                     <img class="img-fluid w-100" src="./assets/img/Illustration/img9.png" alt="" srcset=""></div>
                 <div class="content">
-                    <h2>TITLE</h2>
+                    <h2 class="text-center">Bouffon Vert</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Norman Osborn</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Fondateur de Oscorp tecnologies, Serum Super Soldat, Planeur/Equipements de haute technologies.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Souffrant d'une dissociation de personnalité après l'injection du serum, il ne cherche que le chaos et la mort de Spiderman. La personnalité de Norman reste présente, mais dominée par le bouffon.</dd>
+                        </dl>
                     </p>
                 </div>
             </div>
-
-
-            <div class="col-md-3 carte">
+            <!-- Octopus -->
+            <div class="col-md-4 carte">
                 <div>
                     <img class="img-fluid w-100" src="./assets/img/Illustration/img10.png" alt="" srcset=""></div>
                 <div class="content">
-                    <h2>TITLE</h2>
+                    <h2 class="text-center">Dr. octopus</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
+                        <dl>
+                            <dt>Identité : </dt>
+                            <dd>Otto Octavius</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Chercheur à Oscorp tecnologies, tentacules mécanique controlé par puce neuronale.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Suite à un accident lors d'une experience, sa femme meurt et sont équipement prend le controle de son esprit le rendant plus violent. Pensant que Spiderman est l'originr, il souhaite le voir mort.</dd>
+                        </dl>
                     </p>
                 </div>
             </div>
         </div>
-
-
-
-
-        <div class="row gap-5 justify-content-evenly pt-5">
-            <div class="col-md-3 carte">
+        <!-- Second Row-->
+        <div class="row">
+            <!-- Homme-Sable -->
+            <div class="col-md-4 carte">
                 <div>
                     <img class="img-fluid w-100" src="./assets/img/Illustration/img11.png" alt="" srcset=""></div>
                 <div class="content">
-                    <h2>TITLE</h2>
+                    <h2 class="text-center">Homme-sable</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Flint Marco</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Change son corps en sable, contole individuelement les molécules de sable.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Sauver sa fille atteint de maladie grave est sont unique préocupation, même après sont accident l'ayant changé en homme-sable. Par manque d'argent, il devient criminel malgré lui et enchaine les mauvaises décisions.</dd>
+                        </dl>
                     </p>
                 </div>
             </div>
-
-            <div class="col-md-3 carte">
+            <!-- Bouffont II-->
+            <div class="col-md-4 carte">
                 <div>
                     <img class="img-fluid w-100" src="./assets/img/Illustration/img12.png" alt="" srcset=""></div>
                 <div class="content">
-                    <h2>TITLE</h2>
+                    <h2 class="text-center">Bouffont Vert II</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Harry Osborn</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Dirigeant de Oscorp technologies, Serum Super Soldat II, Planeur/Equippements de haute technologies.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Meilleur amis de Peter. Souffarant d'une dissociation de personnalité après l'injection du serum (comme son père), il ne cherche que la mort de Spiderman, tenu responsable de la mort de son père.</dd>
+                        </dl>
                     </p>
                 </div>
             </div>
-
-            <div class="col-md-3 carte">
+            <!-- Venom -->
+            <div class="col-md-4 carte">
                 <div>
                     <img class="img-fluid w-100" src="./assets/img/Illustration/img13.png" alt="" srcset=""></div>
                 <div class="content">
-                    <h2>TITLE</h2>
+                    <h2 class="text-center">Venom</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Symbiote | Eddie Brock</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Force surhumaine, Matérialisr des armes/objets, Résistance importante.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Extraterrestre se liant à un journaliste d'investigation, il est l'anti Héro par excellence. A la fois térrifiant et violent, mais animé par le sentiment de justice d' Eddie, mieux vaux ne pas en faire son ennemi.</dd>
+                        </dl>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Third row -->
+        <div class="row">
+            <!-- Lézard -->
+            <div class="col-md-4 carte">
+                <div>
+                    <img class="img-fluid w-100" src="./assets/img/Illustration/img14.png" alt="" srcset="">
+                </div>
+                <div class="content">
+                    <h2 class="text-center">Lézard</h2>
+                    <p>
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Dr. Curtis Connors</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Chercheur Oscorp Techologies, Force surhumaine et Aptitudes réptiliennes.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Annimé par le désir de sauvé les maux du corps humain, il développe un sérum à partir d'ADN de lézard. Ce premier essai devait faire repousser sont bras amputé, mais il se transforme entierement en lézard. Son souhait, étendre
+                                cette évolution.
+                            </dd>
+                        </dl>
+                    </p>
+                </div>
+            </div>
+            <!-- Electro -->
+            <div class="col-md-4 carte">
+                <div>
+                    <img class="img-fluid w-100" src="./assets/img/Illustration/img15.png" alt="" srcset=""></div>
+                <div class="content">
+                    <h2 class="text-center">Electro</h2>
+                    <p>
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Maxwell Dillon</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Ingénieur d'Oscorp technologies, Manipulation et stocage de l'éléctricité.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Une expérience à Oscorp tourne mal et transforme son corp en condensateur capable de manipulé l'électricité. Fan obsessionnel de Spiderman, son pouvoir le change en adversaire rempli de colère et cherchant la défaite de son
+                                idole.
+                            </dd>
+                        </dl>
+                    </p>
+                </div>
+            </div>
+            <!-- Rhino -->
+            <div class="col-md-4 carte">
+                <div>
+                    <img class="img-fluid w-100" src="./assets/img/Illustration/img16.png" alt="" srcset="">
+                </div>
+                <div class="content">
+                    <h2 class="text-center">Rhino</h2>
+                    <p>
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Aleksei sytsevich</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Costume mécanique en forme de rihnocéros puissant.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Mafieux Russe qui a detourné un camion blindé d'Oscorp contenant des fioles de plutonium, mais désarmé et vaincu par Spiderman. Il est ensuite rexruté par Harry Osborn, premier membre d'une nouvelle équipe créée pour combattre
+                                Spider-Man et faire des ravages.
+                            </dd>
+                        </dl>
                     </p>
                 </div>
             </div>
 
-
-            <div class="row gap-5 justify-content-evenly pt-5">
-                <div class="col-md-3 carte">
-                    <div>
-                        <img class="img-fluid w-100" src="./assets/img/Illustration/img13.png" alt="" srcset=""></div>
-                    <div class="content">
-                        <h2>TITLE</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
-                        </p>
-                    </div>
+        </div>
+        <!-- Fourth row-->
+        <div class="row justify-content-center">
+            <!-- Vautour -->
+            <div class="col-md-4  carte">
+                <div>
+                    <img class="img-fluid w-100" src="./assets/img/Illustration/img17.png" alt="" srcset=""></div>
+                <div class="content">
+                    <h2 class="">Vautour</h2>
+                    <p>
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Adrian Toomes</dd>
+                            <dt>Capacités : </dt>
+                            <dd>
+                                Caustume mécanique de vautour, armes extraterrestre.
+                            </dd>
+                            <dt>Objectif : </dt>
+                            <dd>Il se covertit en marchand d'arme extraterrestre suite à la faillite de son entreprise. Père de famille fortuné le jour, voleur d'arme extraterrestre la nuit, il mène une double vie. Spiderman se mettant à travers de son buisnes,
+                                il souhaite lamort du justicier.
+                            </dd>
+                        </dl>
+                    </p>
                 </div>
-
-                <div class="col-md-3 carte">
-                    <div>
-                        <img class="img-fluid w-100" src="./assets/img/Illustration/img14.png" alt="" srcset=""></div>
-                    <div class="content">
-                        <h2>TITLE</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 carte">
-                    <div>
-                        <img class="img-fluid w-100" src="./assets/img/Illustration/img15.png" alt="" srcset=""></div>
-                    <div class="content">
-                        <h2>TITLE</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
-                        </p>
-                    </div>
-                </div>
-
             </div>
-
-            <div class="row gap-5 justify-content-evenly py-5">
-                <div class="col-md-3 carte">
-                    <div>
-                        <img class="img-fluid w-100" src="./assets/img/Illustration/img16.png" alt="" srcset=""></div>
-                    <div class="content">
-                        <h2>TITLE</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
-                        </p>
-                    </div>
+            <!-- Mysterio -->
+            <div class="col-md-4 carte">
+                <div>
+                    <img class="img-fluid w-100" src="./assets/img/Illustration/img18.png" alt="" srcset=""></div>
+                <div class="content">
+                    <h2 class="text-center">Mysterio</h2>
+                    <p>
+                        <dl>
+                            <dt>Identité :</dt>
+                            <dd>Quentin Beck</dd>
+                            <dt>Capacités : </dt>
+                            <dd>Intelligent, Costume haute technologie, Drones.</dd>
+                            <dt>Objectif : </dt>
+                            <dd>Acien employer de Stark Industries il cherche à remplacer Iron Man et devenir un symbole de justice. Pour cela, il orchestre des attaque en illusions et une technologie avancé. Spiderman découvrant son plan, il devient un adversaire
+                                à la hauteur du héro.</dd>
+                        </dl>
+                    </p>
                 </div>
-
-                <div class="col-md-3 carte">
-                    <div>
-                        <img class="img-fluid w-100" src="./assets/img/Illustration/img17.png" alt="" srcset=""></div>
-                    <div class="content">
-                        <h2>TITLE</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta esse modi sit aliquid impedit vero saepe doloribus, eaque id rem debitis voluptates, facere ratione aspernatur molestias ex cum eius perspiciatis!
-                        </p>
-                    </div>
-                </div>
-
-
             </div>
-
-
+        </div>
     </section>
 
 

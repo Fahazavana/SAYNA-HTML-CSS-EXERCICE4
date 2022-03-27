@@ -1,6 +1,11 @@
         @font-face {
             font-family: "tffh";
-            src: url("../font/Typo-FarFromHomecoming.otf");
+            src: url("../font/FFHC/Typo-FarFromHomecoming.woff2") format("woff2"), url("../font/FFHC/Typo-FarFromHomecoming.otf") format("opentype");
+        }
+        
+        @font-face {
+            font-family: "Montserrat";
+            src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf");
         }
         
          :root {
@@ -9,8 +14,14 @@
             --color-blue: #114c92;
         }
         
+        *[class*="col"] {
+            border: 2px solid green;
+        }
+        
         body {
             color: white;
+            padding-top: 5rem;
+            font-family: "Montserrat";
         }
         /*Font*/
         
@@ -43,6 +54,11 @@
         .text-blue {
             color: var(--color-blue);
         }
+        
+        .text-justify-iw {
+            text-align: justify;
+            text-justify: distribute-all-lines;
+        }
         /* Icon size */
         
         .is-1 {
@@ -52,31 +68,73 @@
         /* input form-control*/
         
         .form-control {
-            padding: 0.5 1rem;
-            min-width: 150px;
+            padding: 0.5rem 1rem;
+            min-width: 100px;
             border-radius: 1rem;
+        }
+        /* Button */
+        
+        a.btn {
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+        }
+        
+        .btn-c {
+            margin: auto;
+            display: block;
+            width: fit-content;
         }
         /* form select du footer*/
         
         .form-select {
+            width: auto;
             border: none;
+            color: white;
+            min-width: 6rem;
             padding: 0 1rem;
-            min-width: 100px;
             border-radius: 1rem;
-            background-image: url("select-arrow.svg")!important;
+            background-image: url("select-arrow.svg") !important;
+        }
+        /* Width property*/
+        
+        .wd-1 {
+            min-width: 10rem;
         }
         /* header*/
         
         header {
             top: 0;
             width: 100%;
+            height: 5rem;
             position: fixed;
+        }
+        
+        .dots {
+            width: 1.5em;
+            height: 1.5em;
+            background-size: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("dots.svg");
+        }
+        
+        dl dt,
+        dl dd {
+            display: inline;
+        }
+        
+        dl dd::after {
+            content: "\a";
+            white-space: pre-line;
         }
         /******* HOME *******/
         
-        #spiderman-top {
-            width: 100%;
-            height: 40vw;
+        #spiderman {
+            height: auto;
+            min-height: 40vw;
+            padding-top: 5rem;
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-image: url(../img/Illustration/img1.png);
@@ -88,18 +146,31 @@
             background-image: url(../img/Illustration/img5.png);
         }
         
+        #become-spider ::placeholder {
+            color: black;
+        }
+        
         #newsletter {
-            height: 40vw;
+            height: auto;
+            min-height: 40vw;
             background-position: 150%;
             background-size: 80% 100%;
             background-repeat: no-repeat;
             background-image: url(../img/Illustration/img6.png);
         }
+        
+        #newsletter ::placeholder {
+            color: white;
+        }
+        
+        #newsletter input {
+            border-color: white;
+        }
         /**** ABOUT ***/
         
         #laToile {
-            width: 100%;
-            height: 40vw;
+            height: auto;
+            min-height: 40vw;
             background-position: 100%;
             background-repeat: no-repeat;
             background-size: 70% 100%;
@@ -108,11 +179,12 @@
         /*** HEROS **/
         
         #unHero {
-            width: 100%;
-            height: 40vw;
+            height: auto;
+            min-height: 40vw;
+            padding-top: 5rem;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url(../img/Illustration/img19.png);
+            background-image: url("../img/Illustration/img19.png");
         }
         
         #fondation {
@@ -120,7 +192,7 @@
             height: 30vw;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url(../img/Illustration/img20.png);
+            background-image: url("../img/Illustration/img20.png");
         }
         
         #univers {
@@ -138,31 +210,65 @@
             background-repeat: no-repeat;
             background-image: url(../img/Illustration/img32.png);
         }
-        /** AVERSAIRE **/
+        /** ADVERSAIRE **/
         
         #vilin {
-            width: 100%;
-            height: 40vw;
+            height: auto;
+            min-height: 40vw;
             background-size: cover;
             background-repeat: no-repeat;
             background-image: url(../img/Illustration/img7.png);
+        }
+        
+        .carte {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 2rem 0 2rem;
         }
         
         .carte .content {
             color: black;
             padding: 2rem;
             border-radius: 0 0 2rem 2rem;
-            border-left: 0.5rem solid rgba(0, 0, 0, 0.5);
-            border-right: 0.5rem solid rgba(0, 0, 0, 0.5);
-            border-bottom: 0.5rem solid rgba(0, 0, 0, 0.5);
+            border-left: 0.5rem solid rgba(0, 0, 0, 0.8);
+            border-right: 0.5rem solid rgba(0, 0, 0, 0.8);
+            border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
+        }
+        /* COMMING SOON */
+        
+        #coming {
+            height: auto;
+            min-height: 40vw;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url("../img/Illustration/img35.png");
+        }
+        /* TOP TITLE */
+        
+        #vilin h1,
+        #unHero h1,
+        #spiderman h1 {
+            font-size: 6rem;
         }
         
         @media screen and (max-width: 768px) {
-            header {
-                background-color: rgba(0, 0, 0, 0)!important;
+            body {
+                padding: 0;
             }
             #become-spider {
                 background-size: 100% 100%;
                 background-image: url(../img/Illustration/img5.png);
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            #amis1 {
+                display: block;
+            }
+            #amis2 {
+                transform: translate(60%, -50%);
+            }
+            .collapse.bg-red {
+                background-color: inherit;
             }
         }

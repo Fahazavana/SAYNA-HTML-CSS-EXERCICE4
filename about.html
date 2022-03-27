@@ -13,29 +13,35 @@
     <title>A propos</title>
 </head>
 
-<body class="bg-yellow pt-md-5">
-
+<body class="bg-red">
     <!-- Header and Navigation bar -->
-    <header class="bg-red">
-        <nav class="container d-flex justify-content-between">
-            <a href="home.html" class="d-inline-flex align-items-center justify-content-evenly">
-                <img class="h-75" src="./assets/img/Logo/logo1.png" alt="">
-                <img class="h-25" src="./assets/img/Logo/logo2.png" alt="">
-                <img class="h-75" src="./assets/img/Logo/logo3.png" alt="">
-            </a>
-            <ul class="list-unstyled d-none d-md-flex align-items-center m-0">
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="home.html">Acceuil</a></li>
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="adversaire.html">Adversaire</a></li>
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="hero.html">Héros</a></li>
-                <li><a class="d-block text-decoration-none fw-bold text-white p-3" href="about.html">À propos</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="home.html" class="navbar-brand d-inline-flex align-items-center justify-content-evenly">
+                    <img class="h-75" src="./assets/img/Logo/logo1.png" alt="">
+                    <img class="h-25" src="./assets/img/Logo/logo2.png" alt="">
+                    <img class="h-75" src="./assets/img/Logo/logo3.png" alt="">
+                </a>
+                <!-- Togle button for mobile-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="dots"></span>
+          </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-center bg-red" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="home.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="adversaire.html">Adversaire</a></li>
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="hero.html">Héros</a></li>
+                        <li class="nav-item"><a class="d-block fw-bold text-decoration-none text-white p-3" href="about.html">À propos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
-
     <!-- MAIN SECTION -->
-    <section id="laToile">
-        <div class="container  ">
+    <section id="laToile" class="d-flex align-items-center">
+        <div class="container">
             <h1 class="f-title-1 ">
                 LA TOILE
             </h1>
@@ -47,7 +53,9 @@
         <div class="container">
             <div class="col-md-6 me-md-auto">
                 <h2 class="f-title-1">LA PETITE ANTENNE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia obcaecati consequuntur vel, dolores in sed voluptate cumque dolore commodi.</p>
+                <p>
+                    Envie de laisser un mot à ton araigné préférée.<br> Dépose ton message sur lr web et on s'occupe de tout !
+                </p>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -69,21 +77,27 @@
     <section>
 
     </section>
-    <section class="bg-blue text-center text-md-start  py-5">
+    <section class="bg-blue py-5">
         <div class="container">
             <div>
                 <h2 class="f-title-1"> SAYNA X MARVEL</h2>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cum? Minima quasi quia soluta possimus magnam, velit nostrum animi ut facilis sint quidem obcaecati at dolores nihil repudiandae mollitia beatae cum exercitationem quod?
-                        Corporis iure deleniti maiores nemo recusandae ipsa. Harum, corrupti dolorum. Excepturi quos quisquam sed, deserunt vero laudantium.
+                <div class="col-md-6 text-justify-iw">
+                    <p>
+                        Créé par les légendaires Stan Lee et steve Ditko, le héro est apparu pour la première fois en 1962 dans les planches du comics The Amazing Fantasy #15. Avant sont intégration dans le Marvel Cinematic Universe (MCU) et ses première sorties au cinéma, le
+                        personnage jouissait déja d'une forte popularité auprès des amateurs de super-héros. Cela s'explique grâce à un univers riche et un personnage complexe que l'on retrouve souvent confronté à des histoires tragiques. Mais le personnage
+                        de Spiderman n'est pas la seule de ce succès : la qualité des comics tien au moins autant à l' homme araignée qu'à ses redoutables ennemis et ses iconiques alliés qui vient enrichir ces univers singulier.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi assumenda quae a incidunt, iste veritatis odit et aliquam earum ex, in tempora, reprehenderit quis mollitia. Voluptas quasi ex consequatur in voluptates! Iusto libero
-                        provident id ratione repellendus consequatur, obcaecati enim dignissimos soluta amet, quod non sapiente maiores ex, dolore veritatis?</p>
+                    <p>
+                        Au cours de 60 ans d'histoires, Spiderman a vecu des aventures incroyables, certaines sont même restées gravées au pantéon Marvel. Parmi celle-ci on compte notament la fameuse saga du clone ou celle du costume noir, mais aussi des crossovers dans lesquels
+                        le super-héros tient un rôle majeur comme dans Secret Wars ou plus récemment dans Civil War. Souvent, et en particulier dans ces grands récit, ses ennemis et ses alliés viennent enrichir son univers.
+                    </p>
                 </div>
                 <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt illo magnam odio quas dolore, praesentium alias, cupiditate soluta beatae facilis mollitia a doloremque. Consectetur.
+                    <p>
+                        Toute le monde arrive à s'identifier à ce héro et c'st pourqoi nous avons souhaité faire une collaboration!<br> Cette collaboration est la première d'une grande série. L'univers de la pop culture est une relion chez SAYNA. Nous
+                        aimons à la fois la richesse, mais surtout toutes les valeurs qu'elle dégageant :
                         <ul>
                             <li>Partage</li>
                             <li>Liberté</li>
@@ -91,8 +105,13 @@
                             <li>...</li>
                         </ul>
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta ratione consequuntur rem provident ab aspernatur repellendus inventore illum porro?</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>
+                        La pop culture fait désormais partie intégrante de notre histoire et nous pouvons nous appuyer dessus pour éveiller nos esprits.<br> L'univers de SAYNA est tout aussi riche ! De nombreuses aventures attendents ceux d'entre vous
+                        qui cherchent à se dépasser et explorer des frontières inconnus.
+                    </p>
+                    <p>
+                        L'aventure ne fait que commencer, alors crampone toi!
+                    </p>
                 </div>
                 <p>Retrouve nous sur les réseaux sociaux</p>
                 <div class="col-12 d-flex flex-wrap justify-content-around">

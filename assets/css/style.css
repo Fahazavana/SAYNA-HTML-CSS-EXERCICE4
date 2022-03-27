@@ -159,6 +159,7 @@
             background-image: url(../img/Illustration/img6.png);
         }
         
+        #antenne ::placeholder,
         #newsletter ::placeholder {
             color: white;
         }

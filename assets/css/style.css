@@ -91,9 +91,19 @@ body {
     background-image: url("select-arrow.svg") !important;
 }
 
+dl dt,
+dl dd {
+    display: inline;
+}
+
+dl dd::after {
+    content: "\a";
+    white-space: pre-line;
+}
+
 .card {
-    background-color: inherit;
     border: none;
+    background-color: inherit;
 }
 
 footer .nav-item .nav-link {
@@ -164,6 +174,27 @@ header .nav-item:hover .nav-link {
 
 
 /* ADVERSAIRE */
+
+#vilin {
+    background-size: 100% 100%;
+    background-image: url("../img/Illustration/img7.png");
+}
+
+
+/* redefine .card and .card-body for adversaire*/
+
+#adversaire .card {
+    margin-top: 2rem;
+}
+
+#adversaire .card-body {
+    color: black;
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    border-left: 0.5rem solid rgba(0, 0, 0, 0.8);
+    border-right: 0.5rem solid rgba(0, 0, 0, 0.8);
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
+}
 
 @media screen and (min-width: 576px) {
     .main-title {

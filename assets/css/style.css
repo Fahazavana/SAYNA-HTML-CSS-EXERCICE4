@@ -194,6 +194,17 @@ header .nav-item:hover .nav-link {
     border-left: 0.5rem solid rgba(0, 0, 0, 0.8);
     border-right: 0.5rem solid rgba(0, 0, 0, 0.8);
     border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0.1rem 0.15rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+
+/* A PROPOS about.html */
+
+#laToile {
+    background-size: contain;
+    background-position: right;
+    background-color: var(--color-yellow);
+    background-image: url("../img/Illustration/img5alt.png");
 }
 
 @media screen and (min-width: 576px) {

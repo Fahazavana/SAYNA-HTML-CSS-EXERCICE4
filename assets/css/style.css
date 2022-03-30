@@ -231,6 +231,12 @@
         background-color: var(--color-red);
         background-image: url("../img/Illustration/img32.png");
     }
+    /* BATMAN bonus.html */
+    
+    #batman {
+        background-size: 100% 100%;
+        background-image: url("../img/Illustration/img35.png");
+    }
     
     #univers {
         background-size: cover;

@@ -1,5 +1,5 @@
     @font-face {
-        font-family: "ffh";
+        font-family: "Spiderman";
         src: url("../font/FFHC/Typo-FarFromHomecoming.woff2") format("woff2"), url("../font/FFHC/Typo-FarFromHomecoming.otf") format("opentype");
     }
     
@@ -13,7 +13,7 @@
         --color-yellow: #f1c530;
         --color-blue: #114c92;
     }
-    /* DEFAULT */
+    /*********** SHARED STYLES *****************/
     
     body {
         color: white;
@@ -46,18 +46,53 @@
         color: var(--color-blue);
     }
     
-    .mybtn-link {
+    .text-justify {
+        text-align: justify;
+        text-justify: distribute-all-lines;
+    }
+    
+    .font-spider {
+        font-family: "Spiderman", sans-serif;
+    }
+    
+    .mybtn {
         margin: auto;
-        display: block;
         min-width: 10rem;
         width: fit-content;
         border-radius: 1rem;
     }
+    
+    input.form-control {
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .py-25 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
     /* HEADER AND FOOTER*/
+    
+    header {
+        top: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
     
     .navbar-toggler-icon {
         /* Redefine bs5 navbar-toggler-icon*/
         background-image: url("dots.svg");
+    }
+    
+    .collapse {
+        background-color: black;
+    }
+    
+    .collapse li {
+        text-align: right;
+        padding-right: 2rem;
+        border-bottom: 1px solid white;
     }
     /* Icon size */
     
@@ -78,6 +113,8 @@
     .form-select {
         /* redefine bs5 Form form-select*/
         color: white;
+        border-radius: 1rem;
+        border: 2px solid white;
         background-image: url("select-arrow.svg") !important;
     }
     
@@ -112,12 +149,17 @@
     header .nav-item:hover .nav-link {
         color: gray;
     }
+    
+    footer a.nav-link {
+        padding: 0.5rem 0.5rem;
+    }
     /* The top big title with backgroud image*/
     
     .main-title {
         display: flex;
         min-height: 40vw;
         max-height: 150px;
+        padding-top: 5rem;
         align-items: center;
         height: auto !important;
         background-repeat: no-repeat;
@@ -125,9 +167,14 @@
     
     .main-title h1.title-1 {
         font-size: 5vw;
-        font-family: "ffh";
+        font-family: "Spiderman", sans-serif;
     }
-    /** HOME index.html **/
+    
+    .main-title .subtitle {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+    /***************************************** HOME index.html **************************************/
     
     #spiderman {
         background-size: 100% 100%;
@@ -141,6 +188,20 @@
         max-width: 100%;
     }
     
+    #spiderCine p {
+        text-align: center;
+    }
+    
+    #spiderCine ul {
+        margin: auto;
+        display: block;
+        width: fit-content;
+    }
+    
+    #spiderCine ul li {
+        text-align: center;
+    }
+    
     #become-spider {
         background-size: contain;
         background-position-x: left;
@@ -150,14 +211,38 @@
         background-image: url("../img/Illustration/img5.png");
     }
     
+    #become-spider input[type="text"],
+    #become-spider input[type="email"] {
+        border: 2px solid black
+    }
+    
+    #become-spider input[type="text"]::placeholder,
+    #become-spider input[type="email"]::placeholder {
+        color: black;
+    }
+    
     #newsletter {
-        height: auto;
+        min-height: 30vw;
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
         background-image: url("../img/Illustration/img6.png");
     }
-    /* ADVERSAIRE */
+    
+    #newsletter input[type="text"],
+    #newsletter input[type="email"] {
+        border: 2px solid white;
+    }
+    
+    #newsletter input[type="text"]::placeholder,
+    #newsletter input[type="email"]::placeholder {
+        color: white
+    }
+    
+    #newsletter .form-check {
+        margin-top: 1rem;
+    }
+    /**********************************************************  ADVERSAIRE *****************************/
     
     #vilin {
         background-size: 100% 100%;
@@ -166,7 +251,7 @@
     /* redefine .card and .card-body for adversaire*/
     
     #adversaire .card {
-        margin-top: 2rem;
+        padding: 2rem;
     }
     
     #adversaire .card-body {
@@ -178,7 +263,7 @@
         border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
         box-shadow: 0.1rem 0.15rem 0.5rem rgba(0, 0, 0, 0.8);
     }
-    /* A PROPOS about.html */
+    /****************************** A PROPOS about.html *********************************************/
     
     #laToile {
         background-size: contain;
@@ -186,11 +271,31 @@
         background-color: var(--color-yellow);
         background-image: url("../img/Illustration/img5alt.png");
     }
-    /* HERO */
+    
+    #antenne input,
+    #antenne textarea {
+        border: 2px solid white;
+    }
+    
+    #antenne textarea {
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    
+    #antenne input::placeholder,
+    #antenne textarea::placeholder {
+        color: white;
+    }
+    /************************************* HERO *************************************************************/
     
     iframe {
+        /*
         width: 100%;
-        height: fit-content;
+        height: auto;
+        min-height: 20vw; */
+        width: 100%;
+        border: none;
+        aspect-ratio: 16/9;
     }
     
     #unHero {
@@ -204,6 +309,16 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url("../img/Illustration/img20.png");
+    }
+    
+    #fondation>div {
+        top: 10vw;
+        position: relative;
+    }
+    
+    #fondation p {
+        font-size: 2.5vw;
+        font-weight: bold;
     }
     
     #amis1,
@@ -231,12 +346,6 @@
         background-color: var(--color-red);
         background-image: url("../img/Illustration/img32.png");
     }
-    /* BATMAN bonus.html */
-    
-    #batman {
-        background-size: 100% 100%;
-        background-image: url("../img/Illustration/img35.png");
-    }
     
     #univers {
         background-size: cover;
@@ -247,6 +356,13 @@
     .bg-transparent-blue {
         background-color: rgba(17, 75, 146, 0.6);
     }
+    /***************************************  BATMAN bonus.html *************************/
+    
+    #batman {
+        background-size: 100% 100%;
+        background-image: url("../img/Illustration/img35.png");
+    }
+    /********************* MEDIA QUERIES ************************** */
     
     @media screen and (min-width: 576px) {
         .main-title {
@@ -256,11 +372,32 @@
     /* MD */
     
     @media screen and (min-width: 768px) {
+        header:hover {
+            background-image: linear-gradient(var(--color-red), var(--color-blue));
+        }
+        .collapse {
+            background-color: initial;
+        }
+        .collapse li {
+            text-align: initial;
+            padding-right: initial;
+            border-bottom: initial;
+        }
         .main-title {
+            margin-top: 4.7rem;
             max-height: 429px;
         }
         #spiderCine p {
             text-align: justify;
+            text-justify: distribute-all-lines;
+        }
+        #spiderCine ul {
+            margin: auto;
+            display: block;
+            width: fit-content;
+        }
+        #spiderCine ul li {
+            text-align: center;
         }
         .footer-nav {
             margin: 0;
@@ -293,6 +430,27 @@
         #lesFilles img {
             width: 45%;
             height: auto;
+        }
+        #adversaire .card {
+            transition: all 1s ease;
+        }
+        #adversaire .card:hover {
+            z-index: 2;
+            position: relative;
+            transform: scale(1.3);
+        }
+        #adversaire .card:hover .card-body {
+            color: white;
+            background-color: black;
+            border-radius: 0 0 2rem 2rem;
+            border-left: 0.5rem solid white;
+            border-right: 0.5rem solid white;
+            border-bottom: 0.5rem solid white;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.8);
+        }
+        .text-md-justify {
+            text-align: justify;
+            text-justify: distribute-all-lines;
         }
     }
     /*LG*/

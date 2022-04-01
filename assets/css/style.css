@@ -1,6 +1,6 @@
     @font-face {
         font-family: "Spiderman";
-        src: url("../font/FFHC/Typo-FarFromHomecoming.woff2") format("woff2"), url("../font/FFHC/Typo-FarFromHomecoming.otf") format("opentype");
+        src: url("../font/FFHC/Typo-FarFromHomecoming.otf") format("opentype");
     }
     
     @font-face {
@@ -60,6 +60,8 @@
         min-width: 10rem;
         width: fit-content;
         border-radius: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
     }
     
     input.form-control {
@@ -74,10 +76,19 @@
     /* HEADER AND FOOTER*/
     
     header {
-        top: 0;
+        position: absolute;
+        top: 0rem;
         width: 100%;
-        position: fixed;
-        z-index: 10;
+    }
+    
+    header .navbar-brand {
+        margin: 0;
+        padding: 0;
+        height: 2rem;
+    }
+    
+    .navbar-brand img {
+        height: 100%;
     }
     
     .navbar-toggler-icon {
@@ -372,8 +383,19 @@
     /* MD */
     
     @media screen and (min-width: 768px) {
+        header {
+            top: 0;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+        }
         header:hover {
             background-image: linear-gradient(var(--color-red), var(--color-blue));
+        }
+        header .navbar-brand {
+            margin: 0;
+            padding: 0;
+            height: 4rem;
         }
         .collapse {
             background-color: initial;

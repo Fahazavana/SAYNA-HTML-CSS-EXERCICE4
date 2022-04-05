@@ -1,0 +1,26 @@
+    #laToile {
+        transform: scaleX(-1);
+        background-size: contain;
+        background-position: left;
+        background-color: var(--color-yellow);
+        background-image: url("../img/Illustration/img5.png");
+    }
+    
+    #laToile div.container {
+        transform: scaleX(-1);
+    }
+    
+    #antenne input,
+    #antenne textarea {
+        border: 1px solid white;
+    }
+    
+    #antenne textarea {
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    
+    #antenne input::placeholder,
+    #antenne textarea::placeholder {
+        color: white;
+    }

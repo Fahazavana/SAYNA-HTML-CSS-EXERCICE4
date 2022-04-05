@@ -1,0 +1,98 @@
+    iframe {
+        /*
+        width: 100%;
+        height: auto;
+        min-height: 20vw; */
+        width: 100%;
+        border: none;
+        aspect-ratio: 16/9;
+    }
+    
+    #unHero {
+        background-size: cover;
+        background-image: url("../img/Illustration/img19.png");
+    }
+    
+    #fondation {
+        width: 100%;
+        min-height: 30vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../img/Illustration/img20.png");
+    }
+    
+    #fondation>div {
+        top: 10vw;
+        position: relative;
+    }
+    
+    #fondation p {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+    
+    #amis1,
+    #amis2 {
+        padding: 0.5rem;
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    
+    #lesFilles {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #lesFilles img {
+        width: 30%;
+    }
+    
+    #avengers {
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--color-red);
+        background-image: url("../img/Illustration/img32.png");
+    }
+    
+    #univers {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../img/Illustration/img33.png");
+    }
+    
+    .bg-transparent-blue {
+        background-color: rgba(17, 75, 146, 0.6);
+    }
+    
+    @media screen and (min-width:768px) {
+        #amis1 {
+            width: 60%;
+            padding: 0;
+            display: block;
+            margin-left: 0;
+        }
+        #amis2 {
+            width: 65%;
+            padding: 0;
+            margin-left: 35%;
+            margin-top: -15%;
+        }
+        #lesFilles {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+        #lesFilles img {
+            width: 45%;
+            height: auto;
+        }
+        .text-md-justify {
+            text-align: justify;
+            text-justify: distribute-all-lines;
+        }
+    }

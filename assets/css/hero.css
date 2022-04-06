@@ -16,8 +16,9 @@
     #fondation {
         width: 100%;
         min-height: 30vw;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-image: url("../img/Illustration/img20.png");
     }
     
@@ -90,9 +91,5 @@
         #lesFilles img {
             width: 45%;
             height: auto;
-        }
-        .text-md-justify {
-            text-align: justify;
-            text-justify: distribute-all-lines;
         }
     }

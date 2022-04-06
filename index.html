@@ -14,17 +14,15 @@
 </head>
 
 <body class="bg-red">
-    <!-- Header and Navigation bar -->
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a href="index.html" class="navbar-brand d-inline-flex align-items-center justify-content-evenly">
+                <a href="bonus.html" class="navbar-brand d-inline-flex align-items-center justify-content-evenly">
                     <img class="h-75" src="./assets/img/Logo/logo1.png" alt="logo-sayna">
-                    <img class="h-25" src="./assets/img/Logo/logo2.png" alt="logo-x">
+                    <img class="h-25 px-2 px-md-4" src="./assets/img/Logo/logo2.png" alt="logo-x">
                     <img class="h-75" src="./assets/img/Logo/logo3.png" alt="logo-Marvel">
                 </a>
-
-
 
                 <!-- Togle button for mobile-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +52,7 @@
             <p class="subtitle d-md-none">
                 L'araigné simpa du quartier !
             </p>
-            <div class="my-3">
+            <div class="mb-3 mt-md-5">
                 <a href="hero.html" class="btn mybtn fw-bold bg-white text-red"> Voir les héros</a>
                 <a href="hero.html" class="btn mybtn fw-bold text-white ms-md-5 border-white border-1 bg-transparent"> Voir les
                     Adversaires</a>
@@ -81,8 +79,8 @@
             <div class="row">
                 <!-- Spyder 1-->
                 <div class="col-md-4  card py-25">
-                    <img src="./assets/img/Illustration/img3.png" alt="Tobéy Maguire">
-                    <div class="card-body">
+                    <img class="img-fluid" src="./assets/img/Illustration/img3.png" alt="Tobéy Maguire">
+                    <div class="card-body my-4">
                         <p class="mb-0">
                             Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobéy Maguire. Un quatrième était prévu mais sera finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur de
                             Sony).
@@ -96,8 +94,8 @@
                 </div>
                 <!-- Spyder 2-->
                 <div class="col-md-4 card py-25">
-                    <img src="./assets/img/Illustration/img2.png" alt="Andrew Garfield">
-                    <div class="card-body">
+                    <img class="img-fluid" src="./assets/img/Illustration/img2.png" alt="Andrew Garfield">
+                    <div class="card-body my-4">
                         <p>
                             The amazing Spiderman est sortit en 2012, C'est Andrew Garfield qui incarne le héro et Mark Webb à la réalisation. Un deuxième volet, The amazing Spider-Man : le destin d'un héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième
                             et un quatrième film étaient prévus pour 2016 et 2018. finalement Marvl et Sonytrouvent un accord pour introduire Spiderman dans l'univers cinématographique Marvel et abandonne ainsi The Amzing Spider-Man.
@@ -108,8 +106,8 @@
                 </div>
                 <!-- Spyder 3-->
                 <div class="col-md-4 card py-25">
-                    <img src="./assets/img/Illustration/img4.png" alt="Tom Halland">
-                    <div class="card-body">
+                    <img class="img-fluid" src="./assets/img/Illustration/img4.png" alt="Tom Halland">
+                    <div class="card-body my-4">
                         <p class="m-0">
                             Spiderman, désormais incarné par Tom Holland, apparait pour la première fois dans l'univers Marvel avec Captain America: Civil War, Sorti en 2016. Par la suite, une trilogie de films lui est consacrée:
                         </p>
@@ -134,12 +132,12 @@
     <!-- Become Spiderman -->
     <section id="become-spider">
         <div class="container py-25">
-            <div class="col-md-5 mx-auto me-md-0">
+            <div class="col-md-6 mx-auto me-md-0">
                 <h2 class="font-spider text-center">DEVIENS SPIDERMAN</h2>
                 <p class=" text-center">
                     Remplis le formulaire ci dessous afin de recevoir ton propre costume
                 </p>
-                <form action="." method="post">
+                <form class="col-md-10 mx-auto" action="." method="post">
                     <input class="form-control" type="text" name="nom" id="nom" placeholder="Nom">
                     <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prénom">
                     <input class="form-control" type="text" name="taille" id="taille" placeholder="Taille (cm)">
@@ -153,15 +151,18 @@
     <!-- end of become Spider-->
 
     <!-- NewsLetter-->
-    <section id="newsletter" class="d-flex align-items-start py-5">
+    <section id="newsletter" class="d-flex  align-items-start py-5">
         <div class="container py-25">
             <div class="row">
-                <div class="col-md-6 mx-auto ms-md-0">
-                    <h2 class="font-spider text-center">
+                <div class="col-12 col-md-8 ms-md-0 text-center text-md-start ">
+                    <h2 class="font-spider">
                         INSCRIT TOI A NOTRE NEWS LETTER
                     </h2>
+                    <p> L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter ! </p>
+                </div>
+                <div class=" col-8 col-md-6  ms-md-0 my-5">
                     <form action="." method="post">
-                        <div class="pe-md-5">
+                        <div class="col-md-10 mb-5">
                             <input class="form-control bg-transparent" type="text" name="nomPrenom" id="nomPrenom" placeholder="Nom Prénom">
                             <input class="form-control bg-transparent" type="email" name="email2" id="email2" placeholder="Adresse e-mail">
                         </div>
@@ -188,12 +189,11 @@
                         <li class="nav-item"><a class="nav-link" href="#">Politique de confidentialité</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"> Cookies</a></li>
                         <li class="nav-item d-none d-md-block">
-                            <a href="index.html">
-                                <span class="d-inline-flex align-items-center justify-content-evenly">
-                                    <img class="h-75" src="./assets/img/Logo/logo1.png" alt="logo-sayna">
-                                    <img class="h-25" src="./assets/img/Logo/logo2.png" alt="logo-x">
-                                    <img class="h-75" src="./assets/img/Logo/logo3.png" alt="logo-Marvel">
-                                </span>
+                            <!-- Fogo for Web-->
+                            <a href="bonus.html" class="navbar-brand d-inline-flex align-items-center justify-content-evenly ">
+                                <img class="h-75" src="./assets/img/Logo/logo1.png" alt="logo-sayna">
+                                <img class="h-25 px-3" src="./assets/img/Logo/logo2.png" alt="logo-x">
+                                <img class="h-75" src="./assets/img/Logo/logo3.png" alt="logo-Marvel">
                             </a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./about.html">Contact</a></li>
@@ -211,12 +211,13 @@
                 </div>
             </div>
 
-            <div class="d-inline-flex align-items-center justify-content-evenly d-block d-md-none">
-                <span>
-                    <img class="h-75" src="./assets/img/Logo/logo1.png" alt="logo-sayna" />
-                    <img class="h-25" src="./assets/img/Logo/logo2.png" alt="logo-x" />
-                    <img class="h-75" src="./assets/img/Logo/logo3.png" alt="logo-Marvel" />
-                </span>
+            <!--Logo for Mobile -->
+            <div class="d-md-none mx-auto">
+                <a href="index.html" class="navbar-brand d-inline-flex align-items-center justify-content-evenly">
+                    <img class="h-75" src="./assets/img/Logo/logo1.png" alt="logo-sayna">
+                    <img class="h-25 px-2" src="./assets/img/Logo/logo2.png" alt="logo-x">
+                    <img class="h-75" src="./assets/img/Logo/logo3.png" alt="logo-Marvel">
+                </a>
             </div>
 
             <!-- Footer Social Media-->
@@ -243,7 +244,7 @@
                 </li>
             </ul>
         </nav>
-        <p class="text-center text-muted mt-3">&copy; SaynaXMarvel, Inc. 2022. We love our users!</p>
+        <p class="text-center mt-3">&copy; SaynaXMarvel, Inc. 2022. We love our users!</p>
         <audio class="d-block mx-auto" loop controls autoplay>
             <source src="./assets/media/audio/audio1.mp3">
             Votre navigateur ne supporte pas l'élément <code>audio</code>

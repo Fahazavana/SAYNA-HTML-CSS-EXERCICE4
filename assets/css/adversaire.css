@@ -7,7 +7,7 @@
 /* redefine .card and .card-body for adversaire*/
 
 #adversaire .card {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 #adversaire .card-body {
@@ -23,6 +23,7 @@
 @media screen and (min-width:768px) {
     #adversaire .card {
         transition: all 1s ease;
+        min-width: 360px;
     }
     #adversaire .card:hover {
         z-index: 2;

@@ -24,3 +24,15 @@
     #antenne textarea::placeholder {
         color: white;
     }
+    
+    a.mybtn:hover {
+        background-color: black!important;
+    }
+    /* I use important there because of bs-5 */
+    
+    @media screen and (max-width:767px) {
+        input[type="submit"] {
+            background-color: white!important;
+            color: var(--color-red) !important;
+        }
+    }

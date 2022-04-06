@@ -69,6 +69,10 @@
         border-radius: 1rem;
     }
     
+    input[type="submit"]:hover {
+        background-color: black!important;
+    }
+    
     .py-25 {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -76,9 +80,16 @@
     /* HEADER AND FOOTER*/
     
     header {
-        position: absolute;
         top: 0rem;
         width: 100%;
+        z-index: 10;
+        position: absolute;
+    }
+    
+    footer .navbar-brand {
+        margin: 0;
+        padding: 0;
+        height: 3rem;
     }
     
     header .navbar-brand {
@@ -87,23 +98,23 @@
         height: 2rem;
     }
     
-    .navbar-brand img {
-        height: 100%;
-    }
-    
     .navbar-toggler-icon {
         /* Redefine bs5 navbar-toggler-icon*/
         background-image: url("dots.svg");
     }
     
-    .collapse {
-        background-color: black;
-    }
-    
-    .collapse li {
-        text-align: right;
+    .show li {
+        width: 100%;
         padding-right: 2rem;
         border-bottom: 1px solid white;
+        transition: all 0.5s ease;
+    }
+    
+    .navbar-collapse.show {
+        z-index: 3;
+        text-align: end;
+        transition: all 1s ease;
+        background-image: linear-gradient(var(--color-red), var(--color-blue));
     }
     /* Icon size */
     
@@ -127,21 +138,6 @@
         border-radius: 1rem;
         border: 1px solid white;
         background-image: url("select-arrow.svg") !important;
-    }
-    
-    dl dt,
-    dl dd {
-        display: inline;
-    }
-    
-    dl dd::after {
-        content: "\a";
-        white-space: pre-line;
-    }
-    
-    .card {
-        border: none;
-        background-color: inherit;
     }
     
     footer .nav-item .nav-link {
@@ -169,7 +165,8 @@
     .main-title {
         display: flex;
         min-height: 40vw;
-        max-height: 150px;
+        max-height: 328px;
+        height: auto;
         padding-top: 5rem;
         align-items: center;
         height: auto !important;
@@ -182,24 +179,32 @@
     }
     
     .main-title .subtitle {
-        font-size: 2.5vw;
+        font-size: clamp(12px, 2.5vw, 2rem);
         font-weight: bold;
     }
-    /********************* MEDIA QUERIES ************************** */
     
-    @media screen and (min-width: 576px) {
-        .main-title {
-            max-height: 328px;
-        }
+    dl dt,
+    dl dd {
+        display: inline;
     }
+    
+    dl dd::after {
+        content: "\a";
+        white-space: pre-line;
+    }
+    
+    .card {
+        border: none;
+        background-color: inherit;
+    }
+    /********************* MEDIA QUERIES ************************** */
     /* MD */
     
     @media screen and (min-width: 768px) {
         header {
             top: 0;
             width: 100%;
-            position: fixed;
-            z-index: 10;
+            position: sticky;
         }
         header:hover {
             background-image: linear-gradient(var(--color-red), var(--color-blue));
@@ -207,7 +212,7 @@
         header .navbar-brand {
             margin: 0;
             padding: 0;
-            height: 4rem;
+            height: 3rem;
         }
         .collapse {
             background-color: initial;
@@ -217,8 +222,11 @@
             padding-right: initial;
             border-bottom: initial;
         }
+        .text-md-justify {
+            text-align: justify!important;
+            text-justify: inter-word;
+        }
         .main-title {
-            margin-top: 5rem;
             max-height: 429px;
         }
         .footer-nav {

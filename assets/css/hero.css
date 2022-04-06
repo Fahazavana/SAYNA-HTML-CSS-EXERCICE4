@@ -1,15 +1,12 @@
     iframe {
-        /*
-        width: 100%;
-        height: auto;
-        min-height: 20vw; */
         width: 100%;
         border: none;
         aspect-ratio: 16/9;
     }
     
     #unHero {
-        background-size: cover;
+        background-position: center;
+        background-size: auto;
         background-image: url("../img/Illustration/img19.png");
     }
     

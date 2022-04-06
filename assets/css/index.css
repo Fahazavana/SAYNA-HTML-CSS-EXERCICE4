@@ -2,15 +2,13 @@
         background-size: 100% 100%;
         background-image: url("../img/Illustration/img1.png");
     }
-    /*
+    
     #spiderCine img {
         margin: auto;
         height: auto;
         display: block;
         max-width: 100%;
     }
-    
-    */
     
     #spiderCine p {
         text-align: center;
@@ -81,7 +79,7 @@
     @media screen and (min-width:768px) {
         #spiderCine p {
             text-align: justify;
-            text-justify: distribute-all-lines;
+            text-justify: inter-word;
         }
         #spiderCine ul {
             margin-left: 0;

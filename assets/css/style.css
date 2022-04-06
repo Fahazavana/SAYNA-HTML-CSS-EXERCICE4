@@ -48,7 +48,7 @@
     
     .text-justify {
         text-align: justify;
-        text-justify: distribute-all-lines;
+        text-justify: inter-word;
     }
     
     .font-spider {
@@ -69,7 +69,9 @@
         border-radius: 1rem;
     }
     
+    a.mybtn:hover,
     input[type="submit"]:hover {
+        color: white;
         background-color: black!important;
     }
     
@@ -86,6 +88,13 @@
         position: absolute;
     }
     
+    footer {
+        /* To delete empty space after the footer */
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    
     footer .navbar-brand {
         margin: 0;
         padding: 0;
@@ -97,11 +106,17 @@
         padding: 0;
         height: 2rem;
     }
+    /* mobile navbar */
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
     
     .navbar-toggler-icon {
         /* Redefine bs5 navbar-toggler-icon*/
         background-image: url("dots.svg");
     }
+    /* Mobile collapsed menu */
     
     .show li {
         width: 100%;
@@ -116,7 +131,7 @@
         transition: all 1s ease;
         background-image: linear-gradient(var(--color-red), var(--color-blue));
     }
-    /* Icon size */
+    /* Icon size on footer */
     
     .is-1 {
         width: 2.5rem;
@@ -149,7 +164,7 @@
         /*redefine bs5 nav-item|link*/
         margin: 0;
         color: white;
-        font-weight: 700;
+        font-weight: 500;
     }
     
     footer .nav-item:hover .nav-link,
@@ -158,15 +173,15 @@
     }
     
     footer a.nav-link {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.75rem;
     }
     /* The top big title with backgroud image*/
     
     .main-title {
+        height: auto;
         display: flex;
         min-height: 40vw;
-        max-height: 328px;
-        height: auto;
+        max-height: 400px;
         padding-top: 5rem;
         align-items: center;
         height: auto !important;
@@ -174,14 +189,15 @@
     }
     
     .main-title h1.title-1 {
-        font-size: 5vw;
+        font-size: clamp(20px, 5vw, 100px);
         font-family: "Spiderman", sans-serif;
     }
     
     .main-title .subtitle {
-        font-size: clamp(12px, 2.5vw, 2rem);
-        font-weight: bold;
+        font-size: clamp(12px, 2vw, 2rem);
+        font-weight: 650;
     }
+    /* definition/description list used on hero.html an adversaire.html */
     
     dl dt,
     dl dd {
